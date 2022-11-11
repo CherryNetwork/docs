@@ -59,7 +59,7 @@ If you were running a node previously(especially if the node was not a validator
 ```bash
 ./target/release/cherry --chain cherry-mainnet
 --name "<insert a name of your choice for you validator>"
---bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWC3UYsfPTpBvDr5oqc8CRe2jftT5kaVYpfhYojjLT4HWB
+--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWGPucxnXL6yv9nqK6p4RJJo6sSWp8kW6pWj8VDNhTbZAk
 --validator --base-path=/tmp/cherry-mainnet
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
@@ -69,7 +69,7 @@ If you were running a node previously(especially if the node was not a validator
 ```bash
 ./target/release/cherry --chain cherry-testnet \
 --name "<insert a name of your choice for you validator>"
---bootnodes /ip4/13.38.120.202/tcp/30333/p2p/12D3KooWLPZqAGQ81UFuXWxLCVMBsZ58MWNp19LZSJEpkrWfktkn \
+--bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWSDzY9RcjgsTaGCJR41MgH6FP6JSmi4yqdoKGrMkY4yT5 \
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
 --validator
 ```
