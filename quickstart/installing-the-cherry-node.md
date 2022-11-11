@@ -75,7 +75,7 @@ or you run it yourself if you installed all the required dependencies:
 ```shell
 cargo b --release && ./target/release/cherry 
 --chain cherry-mainnet
---bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWC3UYsfPTpBvDr5oqc8CRe2jftT5kaVYpfhYojjLT4HWB 
+--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWGPucxnXL6yv9nqK6p4RJJo6sSWp8kW6pWj8VDNhTbZAk 
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" 
 ```
 
@@ -84,6 +84,6 @@ cargo b --release && ./target/release/cherry
 ```shell
 cargo b --release && ./target/release/cherry 
 --chain cherry-testnet 
---bootnodes /ip4/13.38.120.202/tcp/30333/p2p/12D3KooWBBz9C5t8vZBCPW1bhKwDDp2gqgMpSYTdWkZ2iBTLPxLd 
+--bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWSDzY9RcjgsTaGCJR41MgH6FP6JSmi4yqdoKGrMkY4yT5
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
