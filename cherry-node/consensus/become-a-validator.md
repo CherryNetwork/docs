@@ -14,7 +14,7 @@ Warning: It is highly recommended that you have significant system administratio
 
 The most common way for a beginner to run a validator is on a cloud server running Linux. You may choose whatever [VPS](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#vps-list) provider that your prefer, and whatever operating system you are comfortable with. For this guide we will be using **Ubuntu 18.04**, but the instructions should be similar for other platforms.
 
-#### Note Prerequisites: Install Rust & Dependencies
+### Note Prerequisites: Install Rust & Dependencies
 
 This command will fetch the latest version of Rust and install it.
 
@@ -38,23 +38,37 @@ rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 
-#### Building the `Cherry` binary
+### Building the `Cherry` binary
+
+#### 1. Mainnet
 
 ```bash
 # Clone the Cherry-Node GitHub Repository
 git clone https://github.com/CherryNetwork/Cherry-Node.git
 cd Cherry-Node
 # Always build from master branch
+git checkout master
 cargo build --release
 ```
 
-#### Running the **`Cherry`** binary
+#### 2. Testnet
+
+```bash
+# Clone the CherryNetwork/polkadot GitHub Repository
+git clone https://github.com/CherryNetwork/polkadot.git
+cd cherry
+# Always build from cherry branch
+git checkout cherry
+cargo build --release
+```
+
+### Running the **`Cherry`** binary
 
 {% hint style="info" %}
 If you were running a node previously(especially if the node was not a validator) run the following for purging the previous chain: `./target/release/cherry purge-chain --chain cherry-mainnet -y`
 {% endhint %}
 
-#### Mainnet:
+#### 1. Mainnet
 
 ```bash
 ./target/release/cherry --chain cherry-mainnet
@@ -64,7 +78,7 @@ If you were running a node previously(especially if the node was not a validator
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
 
-#### Testnet:
+#### 2. Testnet
 
 ```bash
 ./target/release/cherry --chain cherry-testnet \
