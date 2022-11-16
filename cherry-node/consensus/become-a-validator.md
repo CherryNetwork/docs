@@ -70,14 +70,22 @@ If you were running a node previously(especially if the node was not a validator
 
 #### 1. Mainnet
 
-```bash
-./target/release/cherry --chain cherry-mainnet
---name "<insert a name of your choice for you validator>"
---bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWGPucxnXL6yv9nqK6p4RJJo6sSWp8kW6pWj8VDNhTbZAk
---validator --base-path=/tmp/cherry-mainnet
---telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
-```
-
+Methods:
+1. Binary:
+   ```bash
+   ./target/release/cherry --chain cherry-mainnet \
+	--name "<insert a name of your choice for your validator>"
+	--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWGPucxnXL6yv9nqK6p4RJJo6sSWp8kW6pWj8VDNhTbZAk \
+	--validator --base-path=/tmp/cherry-mainnet \
+	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
+   ```
+2. Docker
+   ```bash
+   docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 \ 
+	-v $(pwd):/tmp/cherry-node -d cherrylabsorg/cherry-node:latest cherry \
+	 --chain cherry-mainnet --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWH67GUZCV8gPn7ToMSwjMWA6ujXh1WUjvbp273LBM646h \
+	--rpc-methods=unsafe --base-path /tmp/cherry-node --rpc-cors all --rpc-external --ws-external --name "<insert a na me of your choice for your validator>"
+   ```
 #### 2. Testnet
 
 ```bash
@@ -100,7 +108,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 The output will have a hex-encoded “result” field. The result is the concatenation of the four public keys. Save this result for a later step.
 
-You can restart your node at this point. Simply be pressing Ctrl-C and type the same command from [Running the `cherry` binary](../../quickstart/installing-the-cherry-node.md) section.
+You can restart your node at this point. Simply be pressing Ctrl-C(or docker restart <CONTAINER ID> if running via docker) and type the same command from [Running the `cherry` binary](../../quickstart/installing-the-cherry-node.md) section.
 
 ## Setup Validator Accounts
 
