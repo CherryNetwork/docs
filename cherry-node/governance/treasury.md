@@ -33,7 +33,7 @@ Please note that there is no way for a user to revoke a treasury proposal after 
 
 #### Announcing the Proposal
 
-To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal.&#x20;
+To minimize storage on chain, proposals don't contain contextual information. When a user submits a proposal, they will probably need to find an off-chain way to explain the proposal.
 
 Community members who want to participate in the discussion about proposals should join the [Cherry Network DAO](https://dao.cherry.network/c/governance/). In there you can:
 
@@ -44,7 +44,7 @@ Community members who want to participate in the discussion about proposals shou
 
 To create a proposal use the "Submit proposal" button in the `Governance -> Treasury` tab. A popup window will appear (see image below) with the following fields:
 
-![Treasury proposal example](../../../../Desktop/Screenshot%202022-11-16%20at%2012.34.43%20PM.png "treasury proposal example")
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 1. In the **value** field, you enter the desired amount of CHER.
 2. In the **beneficiary** field, you enter the recipient of the above amount.
