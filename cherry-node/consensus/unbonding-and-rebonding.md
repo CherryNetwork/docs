@@ -22,7 +22,7 @@ Once this process is complete, you will have to issue another, final transaction
 
 You can also check how long you have to wait in order to withdraw your stake in the Accounts page by expanding your account balance. There is a tiny icon beside your tokens waiting to be unbonded, that will eventually become an unlock icon once the remaining blocks get passed.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 Then, you can click that icon directly to submit the withdraw transaction. Finally, your transferrable balance will increase by the amount of tokens you've just fully unbonded.
 
@@ -32,8 +32,8 @@ If you want to rebond your tokens before the unbonding period is over, you can d
 
 To rebond, click the three dots next to the account you want to rebond tokens for, and select “Rebond funds”. Enter the amount of tokens that are currently locked in unbonding that you want to rebond in "rebonded amount”. Then click "Rebond".
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (10) (1).png>)
 
 Confirm the transaction in the next pop-up. Once the transaction is included in the next block your tokens will be rebonded again and you can start staking with them.

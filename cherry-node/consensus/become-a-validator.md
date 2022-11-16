@@ -108,24 +108,24 @@ Open [https://cherry.place/#/explorer](https://cherry.place/#/explorer) in your 
 
 Navigate to `Accounts → Add Account` and create two accounts, one for your **Controller** and one for your **Stash.**
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../.gitbook/assets/image (12).png>)
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../.gitbook/assets/image (8) (1).png>)
 
-![](<../../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (18) (1).png>)
 
 ## Setup Validators
 
 Navigate to **Network** → **Staking** → **Account Actions** → **+Validator**
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 Select your **Stash** & **Controller**
 
-![](<../../.gitbook/assets/image (19).png>)
+![](<../../.gitbook/assets/image (19) (1).png>)
 
-**Add your keys from the** [**Generating the Session Keys**](become-a-validator.md#generating-the-session-keys) **section in the **_**keys from**** ****`rotateKeys`**_
+**Add your keys from the** [**Generating the Session Keys**](become-a-validator.md#generating-the-session-keys) **section in the \_keys from**\*\* \*\*\*\*`rotateKeys`\*\*\_
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 Finally select **Bond & Validate**
