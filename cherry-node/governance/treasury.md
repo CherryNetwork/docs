@@ -2,7 +2,7 @@
 
 The Treasury is a pot of funds collected through a portion of block production rewards, transaction fees, slashing and staking inefficiencies.
 
-The funds held in the Treasury can be spent by making a spending proposal that, if approved by the Council, will enter a waiting period before distribution. This waiting period is known as the spend period, and its duration is subject to Council, with the current default set to 28 days. The Treasury attempts to spend as many proposals in the queue as it can without running out of funds.
+The funds held in the Treasury can be spent by making a spending proposal that, if approved by the Council, will enter a waiting period before distribution. This waiting period is known as the spend period with the current default set to 28 days. The Treasury attempts to spend as many proposals in the queue as it can without running out of funds.
 
 Treasury payout is an automatic process:
 
@@ -44,9 +44,11 @@ Community members who want to participate in the discussion about proposals shou
 
 To create a proposal use the "Submit proposal" button in the `Governance -> Treasury` tab. A popup window will appear (see image below) with the following fields:
 
+![Treasury proposal example](../../../../Desktop/Screenshot%202022-11-16%20at%2012.34.43%20PM.png "treasury proposal example")
+
 1. In the **value** field, you enter the desired amount of CHER.
 2. In the **beneficiary** field, you enter the recipient of the above amount.
-3. In the **segments** field, you enter the number of months that the recipient will be getting a portion of the above amount. **Example:** Let’s say that you want 10.000 CHER over 4 months (occurs). That means that the recipient will be getting 2.500 CHER each month, for 4 months, for a total of 10.000 CHER (10.000 / 4 = 2.500).
+3. In the **segments** field, you enter the number of spend periods that the recipient will be getting a portion of the above amount. **Example:** Let’s say that you want 10.000 CHER over 4 spend periods (occurs). That means that the recipient will be getting 2.500 CHER each spend period, for 4 spend periods, for a total of 10.000 CHER (10.000 / 4 = 2.500).
 4. Also, a button will appear "Select this or the next cycle", giving you the option to create a proposal on the next spend period.
 
 The system will automatically take the required deposit, picking the higher of the two values mentioned above.
