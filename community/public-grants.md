@@ -6,7 +6,7 @@
 
 Cherry has an on-chain public treasury composed of funds from several sources, including transaction fees, validator fees, and inflation. The public can vote and propose to utilize these funds through a democratic and open process. **Right now, grants are only available in CHER. In the future, you will be able to receive grants in stablecoins as well.**
 
-Every 30 days the treasury adjourns to award the winning proposals their requested CHER tokens. Proposals must be submitted by the 27th day of each governance cycle and received a majority of votes.
+Every 28 days the treasury adjourns to award the winning proposals their requested CHER tokens. Proposals must be submitted by the 24th day of each governance cycle and received a majority of votes.
 
 ### Oversight of Public Payments <a href="#oversight-of-public-payments" id="oversight-of-public-payments"></a>
 

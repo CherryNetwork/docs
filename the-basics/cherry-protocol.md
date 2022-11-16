@@ -5,7 +5,7 @@ This page serves as a high-level introduction to the Cherry protocol with termin
 ### Tokens[​](https://wiki.polkadot.network/docs/build-protocol-info#tokens) <a href="#tokens" id="tokens"></a>
 
 * **Token decimals:**
-  * Cherry (CHER): 8
+  * Cherry (CHER): 18
   * **Balance type:** [`u128`](https://doc.rust-lang.org/std/u128/index.html)
 
 ### Addresses[​](https://wiki.polkadot.network/docs/build-protocol-info#addresses) <a href="#addresses" id="addresses"></a>
