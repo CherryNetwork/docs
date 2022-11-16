@@ -6,8 +6,8 @@ There are several ways to generate a Cherry account:
 
 * [​Polkadot{.js} Browser Plugin ](https://polkadot.js.org/extension/)- _We recommend this for most users_
 * ​[Cherry.Place​](https://cherry.place) - _Cherry Network's blockchain interface_
-* ​[Subkey](create-an-account.md#subkey) - _Advanced and Most secure_
-* Parity Signer
+* ​[Subkey](create-an-account.md#subkey)
+* [Parity Signer](create-an-account.md#undefined) - _Advanced and Most secure_
 
 ## Polkadot{.js} Browser Plugin <a href="#polkadot-.js-browser-plugin" id="polkadot-.js-browser-plugin"></a>
 
