@@ -132,7 +132,7 @@ Select your **Stash** & **Controller**
 
 ![](<../../.gitbook/assets/Screenshot 2022-11-17 at 8.33.14 PM.png>)
 
-**Add your keys from the** [**Generating the Session Keys**](become-a-validator.md#generating-the-session-keys) **section in the \_keys from**\*\* \*\*\*\*`rotateKeys`\*\*\_
+Add your keys from the [**Generating the Session Keys**](become-a-validator.md#generating-the-session-keys) in the `Keys from rotateKeys` field
 
 ![](<../../.gitbook/assets/image (2) (1).png>)
 
