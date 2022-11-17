@@ -130,7 +130,7 @@ Navigate to **Network** → **Staking** → **Account Actions** → **+Validator
 
 Select your **Stash** & **Controller**
 
-![](<../../.gitbook/assets/image (19) (1).png>)
+![](<../../.gitbook/assets/Screenshot 2022-11-17 at 8.33.14 PM.png>)
 
 **Add your keys from the** [**Generating the Session Keys**](become-a-validator.md#generating-the-session-keys) **section in the \_keys from**\*\* \*\*\*\*`rotateKeys`\*\*\_
 
