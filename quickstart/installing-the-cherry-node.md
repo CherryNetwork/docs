@@ -81,6 +81,6 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
     ```shell
     cargo b --release && ./target/release/cherry \ 
         --chain cherry-testnet \
-        --bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWSDzY9RcjgsTaGCJR41MgH6FP6JSmi4yqdoKGrMkY4yT5 \
+        --bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWLN9CL1ADEqxsSjPUBy8z4h1Z5aLGQ1gT7WHKkVmKECYw \
         --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" 
     ```

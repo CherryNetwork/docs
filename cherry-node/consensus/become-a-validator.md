@@ -74,7 +74,7 @@ Methods:
 1. Binary:
    ```bash
    ./target/release/cherry --chain cherry-mainnet \
-	--name "<insert a name of your choice for your validator>"
+	--name "<insert a name of your choice for your validator>" \
 	--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWGPucxnXL6yv9nqK6p4RJJo6sSWp8kW6pWj8VDNhTbZAk \
 	--validator --base-path=/tmp/cherry-mainnet \
 	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
@@ -90,8 +90,8 @@ Methods:
 
 ```bash
 ./target/release/cherry --chain cherry-testnet \
---name "<insert a name of your choice for you validator>"
---bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWSDzY9RcjgsTaGCJR41MgH6FP6JSmi4yqdoKGrMkY4yT5 \
+--name "<insert a name of your choice for you validator>" \
+--bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWLN9CL1ADEqxsSjPUBy8z4h1Z5aLGQ1gT7WHKkVmKECYw \
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
 --validator
 ```
