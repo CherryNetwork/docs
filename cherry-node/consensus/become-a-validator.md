@@ -44,10 +44,10 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ```bash
 # Clone the Cherry-Node GitHub Repository
-git clone https://github.com/CherryNetwork/Cherry-Node.git
-cd Cherry-Node
+git clone https://github.com/CherryNetwork/polkadot.git
+cd polkadot
 # Always build from master branch
-git checkout master
+git checkout cherry
 cargo build --release
 ```
 
@@ -75,7 +75,7 @@ Methods:
    ```bash
    ./target/release/cherry --chain cherry-mainnet \
 	--name "<insert a name of your choice for your validator>" \
-	--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWGPucxnXL6yv9nqK6p4RJJo6sSWp8kW6pWj8VDNhTbZAk \
+	--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \
 	--validator --base-path=/tmp/cherry-mainnet \
 	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
    ```
@@ -83,7 +83,7 @@ Methods:
    ```bash
    docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 \ 
 	-v $(pwd):/tmp/cherry-node -d cherrylabsorg/cherry-node:latest cherry \
-	 --chain cherry-mainnet --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWH67GUZCV8gPn7ToMSwjMWA6ujXh1WUjvbp273LBM646h \
+	 --chain cherry-mainnet --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \
 	--rpc-methods=unsafe --base-path /tmp/cherry-node --rpc-cors all --rpc-external --ws-external --name "<insert a na me of your choice for your validator>"
    ```
 #### 2. Testnet
@@ -91,7 +91,7 @@ Methods:
 ```bash
 ./target/release/cherry --chain cherry-testnet \
 --name "<insert a name of your choice for you validator>" \
---bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWLN9CL1ADEqxsSjPUBy8z4h1Z5aLGQ1gT7WHKkVmKECYw \
+--bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWRx5Uv8V3AcKiDHc1eKKhFBenmg7rJHnrFTpaiCtUomX9 \
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
 --validator
 ```
