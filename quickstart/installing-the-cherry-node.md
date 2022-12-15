@@ -43,44 +43,37 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ## Running the Node
 
-### Mainnet
-
-1.  Clone Cherry-Node repository
+1.  Clone cherry-relay-node repository
 
     ```bash
-    git clone https://github.com/CherryNetwork/polkadot.git
+    git clone https://github.com/CherryNetwork/cherry-relay-node.git
     cd cherry
     ```
+
 2.  Run Build Script
 
-    ```bash
-    chmod +x scripts/run_mainnet.sh
-    ./scripts/run_mainnet.sh
-    ```
+    * Mainnet
 
-    or you run it yourself if you installed all the required dependencies:
+        ```bash
+        chmod +x scripts/run_mainnet.sh
+        ./scripts/run_mainnet.sh
+        ```
 
-    ```shell
-    cargo b --release && ./target/release/cherry \ 
-        --chain cherry-mainnet \
-        --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \ 
-        --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
-    ```
+            or you run it yourself if you installed all the required dependencies:
 
-### Testnet
+        ```shell
+        cargo b --release && ./target/release/cherry \ 
+            --chain node/service/chain-specs/mainnet-relay-regenesis.json \
+            --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \ 
+            --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
+        ```
 
-1.  Clone Cherry Polkadot repository
 
-    ```bash
-    git clone https://github.com/CherryNetwork/polkadot.git
-    cd polkadot
-    git checkout cherry
-    ```
-2.  Build & Run the node
+    * Testnet
 
-    ```shell
-    cargo b --release && ./target/release/cherry \ 
-        --chain cherry-testnet \
-        --bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWRx5Uv8V3AcKiDHc1eKKhFBenmg7rJHnrFTpaiCtUomX9 \
-        --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" 
-    ```
+        ```shell
+        cargo b --release && ./target/release/cherry \ 
+            --chain cherry-testnet \
+            --bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWRx5Uv8V3AcKiDHc1eKKhFBenmg7rJHnrFTpaiCtUomX9 \
+            --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" 
+        ```
