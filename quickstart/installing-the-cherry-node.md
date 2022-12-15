@@ -59,7 +59,7 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
         ./scripts/run_mainnet.sh
         ```
 
-            or you run it yourself if you installed all the required dependencies:
+        or you run it yourself if you installed all the required dependencies:
 
         ```shell
         cargo b --release && ./target/release/cherry \ 
@@ -70,6 +70,13 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 
     * Testnet
+
+        ```bash
+        chmod +x scripts/run_testnet.sh
+        ./scripts/run_testnet.sh
+        ```
+
+        or you run it yourself if you installed all the required dependencies:
 
         ```shell
         cargo b --release && ./target/release/cherry \ 
