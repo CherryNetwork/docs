@@ -40,22 +40,9 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ### Building the `Cherry` binary
 
-#### 1. Mainnet
-
 ```bash
-# Clone the Cherry-Node GitHub Repository
-git clone https://github.com/CherryNetwork/Cherry-Node.git
-cd Cherry-Node
-# Always build from master branch
-git checkout master
-cargo build --release
-```
-
-#### 2. Testnet
-
-```bash
-# Clone the CherryNetwork/polkadot GitHub Repository
-git clone https://github.com/CherryNetwork/polkadot.git
+# Clone the cherry-relay-node GitHub Repository
+git clone https://github.com/CherryNetwork/cherry-relay-node.git
 cd cherry
 # Always build from cherry branch
 git checkout cherry
@@ -65,7 +52,9 @@ cargo build --release
 ### Running the **`Cherry`** binary
 
 {% hint style="info" %}
-If you were running a node previously(especially if the node was not a validator) run the following for purging the previous chain: `./target/release/cherry purge-chain --chain cherry-mainnet -y`
+If you were running a node previously(especially if the node was not a validator) run the following for purging the previous chain: `./target/release/cherry purge-chain --chain node/service/chain-specs/mainnet-relay-regenesis.json -y` on Mainnet
+or
+`./target/release/cherry purge-chain --chain cherry-testnet -y` on Testnet
 {% endhint %}
 
 #### 1. Mainnet
@@ -73,17 +62,22 @@ If you were running a node previously(especially if the node was not a validator
 Methods:
 1. Binary:
    ```bash
-   ./target/release/cherry --chain cherry-mainnet \
+   ./target/release/cherry --chain node/service/chain-specs/mainnet-relay-regenesis.json \
 	--name "<insert a name of your choice for your validator>" \
-	--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWGPucxnXL6yv9nqK6p4RJJo6sSWp8kW6pWj8VDNhTbZAk \
+	--bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \
 	--validator --base-path=/tmp/cherry-mainnet \
-	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
+	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
+	--rpc-methods=unsafe \
+	--rpc-cors all \
+	--rpc-external \
+	--ws external
+
    ```
 2. Docker
    ```bash
    docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 \ 
 	-v $(pwd):/tmp/cherry-node -d cherrylabsorg/cherry-node:latest cherry \
-	 --chain cherry-mainnet --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWH67GUZCV8gPn7ToMSwjMWA6ujXh1WUjvbp273LBM646h \
+	 --chain node/service/chain-specs/mainnet-relay-regenesis.json --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \
 	--rpc-methods=unsafe --base-path /tmp/cherry-node --rpc-cors all --rpc-external --ws-external --name "<insert a na me of your choice for your validator>"
    ```
 #### 2. Testnet
@@ -91,9 +85,13 @@ Methods:
 ```bash
 ./target/release/cherry --chain cherry-testnet \
 --name "<insert a name of your choice for you validator>" \
---bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWLN9CL1ADEqxsSjPUBy8z4h1Z5aLGQ1gT7WHKkVmKECYw \
+--bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWRx5Uv8V3AcKiDHc1eKKhFBenmg7rJHnrFTpaiCtUomX9 \
 --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
---validator
+--validator \
+--rpc-methods=unsafe \
+--rpc-cors all \
+--rpc-external \
+--ws external
 ```
 
 ## Generating the Session Keys
