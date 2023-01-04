@@ -43,44 +43,59 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ## Running the Node
 
-1.  Clone cherry-relay-node repository
+1. Clone cherry-relay-node repository
 
     ```bash
     git clone https://github.com/CherryNetwork/cherry-relay-node.git
     cd cherry
     ```
 
-2.  Run Build Script
+2. Run Cherry Binary
 
     * Mainnet
 
-        ```bash
-        chmod +x scripts/run_mainnet.sh
-        ./scripts/run_mainnet.sh
-        ```
+        1. Script
 
-        or you run it yourself if you installed all the required dependencies:
+            ```bash
+            chmod +x scripts/run_mainnet.sh
+            ./scripts/run_mainnet.sh
+            ```
 
-        ```shell
-        cargo b --release && ./target/release/cherry \ 
+        2. Binary
+
+            ```shell
+            cargo b --release && ./target/release/cherry \ 
             --chain node/service/chain-specs/mainnet-relay-regenesis.json \
-            --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \ 
+            --bootnodes /ip4/15.188.14.75/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \ 
             --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
-        ```
+            ```
 
+        3. Docker
+
+            ```bash
+            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry --bootnodes /ip4/15.188.14.75/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp --name mainnet-node01 --base-path /tmp/cherry-mainnet-node01
+            ```
 
     * Testnet
 
-        ```bash
-        chmod +x scripts/run_testnet.sh
-        ./scripts/run_testnet.sh
-        ```
+        1. Script
 
-        or you run it yourself if you installed all the required dependencies:
+            ```bash
+            chmod +x scripts/run_testnet.sh
+            ./scripts/run_testnet.sh
+            ```
 
-        ```shell
-        cargo b --release && ./target/release/cherry \ 
+        2. Binary
+
+            ```shell
+            cargo b --release && ./target/release/cherry \ 
             --chain cherry-testnet \
             --bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWRx5Uv8V3AcKiDHc1eKKhFBenmg7rJHnrFTpaiCtUomX9 \
             --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" 
-        ```
+            ```
+
+        3. Docker
+
+            ```bash
+            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.39.49.17/tcp/30333/p2p/12D3KooWRx5Uv8V3AcKiDHc1eKKhFBenmg7rJHnrFTpaiCtUomX9 --name testnet-node01 --base-path /tmp/cherry-testnet-node01
+            ```
