@@ -78,7 +78,8 @@ Methods:
    docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 \ 
 	-v $(pwd):/tmp/cherry-node -d cherrylabsorg/cherry-node:latest cherry \
 	 --chain node/service/chain-specs/mainnet-relay-regenesis.json --bootnodes /ip4/15.236.154.200/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \
-	--rpc-methods=unsafe --base-path /tmp/cherry-node --rpc-cors all --rpc-external --ws-external --name "<insert a na me of your choice for your validator>"
+	--rpc-methods=unsafe --base-path /tmp/cherry-node --rpc-cors all --rpc-external --ws-external --validator \
+	--name "<insert a na me of your choice for your validator>"
    ```
 #### 2. Testnet
 
