@@ -26,7 +26,7 @@ For debian-based distros:
 
 ```shell
 sudo apt update
-sudo apt install -y git clang curl libssl-dev llvm libudev-dev pkg-config
+sudo apt install -y git clang protobuf-compiler curl libssl-dev llvm libudev-dev pkg-config
 ```
 
 {% hint style="info" %}
@@ -47,7 +47,7 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
     ```bash
     git clone https://github.com/CherryNetwork/cherry-relay-node.git
-    cd cherry
+    cd cherry-relay-node
     ```
 
 2. Run Cherry Binary

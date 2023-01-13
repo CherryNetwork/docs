@@ -31,7 +31,7 @@ source $HOME/.cargo/env
 Finally, run this command to install the necessary dependencies for compiling and running the Cherry Node.
 
 ```bash
-sudo apt update && sudo apt install -y git build-essential clang pkg-config curl libssl-dev llvm libudev-dev
+sudo apt update && sudo apt install -y git build-essential clang pkg-config protobuf-compiler curl libssl-dev llvm libudev-dev
 rustup default stable
 rustup update
 rustup update nightly
@@ -43,7 +43,7 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 ```bash
 # Clone the cherry-relay-node GitHub Repository
 git clone https://github.com/CherryNetwork/cherry-relay-node.git
-cd cherry
+cd cherry-relay-node
 # Always build from cherry branch
 git checkout cherry
 cargo build --release
