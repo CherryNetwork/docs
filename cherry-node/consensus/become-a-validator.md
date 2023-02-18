@@ -78,7 +78,7 @@ Methods:
 2. Docker
 
 	```bash
-	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry --bootnodes /ip4/15.188.14.75/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp --validator --name mainnet-node01 --base-path /tmp/cherry-mainnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws-external
+	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry --bootnodes /ip4/15.188.14.75/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp --validator --name mainnet-node01 --base-path /tmp/cherry-mainnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws external
 	```
 
 #### 2. Testnet
@@ -102,7 +102,7 @@ Methods:
 2. Docker
 
 	```bash
-	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWQD9CQaWe1D2WdQyG5BxNumbtNm9V6BjHbdYjRsrgHpM3 --validator --name testnet-node01 --base-path /tmp/cherry-testnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws-external
+	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWQD9CQaWe1D2WdQyG5BxNumbtNm9V6BjHbdYjRsrgHpM3 --validator --name testnet-node01 --base-path /tmp/cherry-testnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws external
 	```
 
 ## Generating the Session Keys
