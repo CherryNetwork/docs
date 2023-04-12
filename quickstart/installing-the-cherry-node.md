@@ -90,12 +90,12 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
             ```shell
             cargo b --release && ./target/release/cherry \ 
             --chain cherry-testnet \
-            --bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWQD9CQaWe1D2WdQyG5BxNumbtNm9V6BjHbdYjRsrgHpM3 \
+            --bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWPPV5cf5XYECX26GkxrfH48Cn5n4zPybwuCTEDwRTfbuT \
             --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" 
             ```
 
         3. Docker
 
             ```bash
-            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWQD9CQaWe1D2WdQyG5BxNumbtNm9V6BjHbdYjRsrgHpM3 --name testnet-node01 --base-path /tmp/cherry-testnet-node01
+            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWPPV5cf5XYECX26GkxrfH48Cn5n4zPybwuCTEDwRTfbuT --name testnet-node01 --base-path /tmp/cherry-testnet-node01
             ```
