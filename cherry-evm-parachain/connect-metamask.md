@@ -19,16 +19,16 @@ This should open up a form to add a new network to your MetaMask (you might have
 ### Cherry EVM parachain details
 
 **Network name**: Cherry EVM Testnet  
-**New RPC URL**:   
+**New RPC URL**: http://evm-testnet.rpc.cherrylabs.org/  
 **Chain ID**: 254  
 **Currency symbol**: TPCHER  
 
 Leave the **Block Explorer URL** empty for now.
 
-![Custom network information](<../.gitbook/assets/customNetworkInfo.png>)
+![Custom network information](<../.gitbook/assets/metamaskInfo.png>)
 
 Cherry EVM should now be connected and you should see your TPCHER balance (if you have any).
 
 ![MetaMask balance](<../.gitbook/assets/metamaskBalance.png>)
 
-You might have to bind your MetaMask account to your Substrate account in order to see your balance. Documentation on how to do it is available [here](link to another page).
+You will have to find your Substrate proxy account linked to your MetaMask address in order to see your balance and be able to transfer balances to it.
