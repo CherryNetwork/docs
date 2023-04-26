@@ -6,7 +6,7 @@ EVM pallet enables the Ethereum EVM capabilities on a native substrate chain. To
 
 ## Ethereum / Substrate Address Conversion tool
 
-Head over to the Address Converter to easily convert your Ethereum address to a Substrate address and vice versa.
+Head over to the [Address Converter](https://converter.cherrylabs.org/) to easily convert your Ethereum address to a Substrate address and vice versa.
 
 Just select the input address format from the dropdown and enter the selected input format address in the input field and click on go. For example:
 
