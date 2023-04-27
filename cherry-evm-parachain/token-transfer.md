@@ -45,3 +45,28 @@ You can transfer your tpCHER from your **EVM parachain substrate account** back 
 **id**: the AccountId of your cherry relay account  
 
 ![xTokens transfer](<../.gitbook/assets/xtokensTransfer.png>)
+
+## Transfer PCHER from Substrate to Ethereum (H160) address
+
+1. Head over to the [address converter](https://converter.cherrylabs.org/).
+2. Enter the receiving Ethereum (H160) account address.
+3. Copy the mapped Substrate address (SS58) and send the desired amount of PCHER to this address (through a substrate balance transfer transaction).
+4. The received PCHER will be shown on the receiver Ethereum address.
+
+## Transfer PCHER from Ethereum to Substrate address.
+
+1. Head over to the [address converter](https://converter.cherrylabs.org/).
+2. Enter the receiving Substrate (SS58) account address.
+3. Copy the mapped H160 address and send the desired amount of PCHER to this address (through metamask).
+4. The receiver should call the `pallet's-evm` `withdraw` function with the following parameters:
+
+   ```bash
+   withdraw(
+      mapped H160 address (from step 3)
+      amount that was transferred (value multiplied by 10^18)
+   )
+   ```
+
+   ![pallet's-evm withdraw function](<../.gitbook/assets/withdrawPalletEvm.png>)
+
+5. The received PCHER will be shown on the receiver Substrate address.
