@@ -45,6 +45,14 @@
 * [Finance](cherry-ecosystem/finance.md)
 * [Capital Partners](cherry-ecosystem/capital-partners.md)
 
+## Cherry EVM Parachain
+
+* [Account Mapping](cherry-evm-parachain/account-mapping.md)
+* [Connect Metamask](cherry-evm-parachain/connect-metamask.md)
+* [Connect Remix](cherry-evm-parachain/connect-remix.md)
+* [Token Transfer](cherry-evm-parachain/token-transfer.md)
+
+
 ## Substrate
 
 * [Polkadot](substrate/polkadot.md)
