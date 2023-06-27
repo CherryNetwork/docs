@@ -1,1 +1,0 @@
-# Cherry EVM parachain
