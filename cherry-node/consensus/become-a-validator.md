@@ -66,7 +66,7 @@ Methods:
    ```bash
    ./target/release/cherry --chain node/service/chain-specs/mainnet-relay-regenesis.json \
 	--name "<insert a name of your choice for your validator>" \
-	--bootnodes /ip4/15.188.14.75/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp \
+	--bootnodes /ip4/13.39.104.56/tcp/30333/p2p/12D3KooWJmNgQE6hftytjeXnwNRNrkxFLoChSa5FSuU7F4DnBUEZ \
 	--validator --base-path=/tmp/cherry-mainnet \
 	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
 	--rpc-methods=unsafe \
@@ -78,7 +78,7 @@ Methods:
 2. Docker
 
 	```bash
-	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry --bootnodes /ip4/15.188.14.75/tcp/30333/p2p/12D3KooWQTgHfboF9q1Ni8q3vG3MVJL5RMxYxYJvLnw3z7P2Mejp --validator --name mainnet-node01 --base-path /tmp/cherry-mainnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws external
+	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry --bootnodes /ip4/13.39.104.56/tcp/30333/p2p/12D3KooWJmNgQE6hftytjeXnwNRNrkxFLoChSa5FSuU7F4DnBUEZ --validator --name mainnet-node01 --base-path /tmp/cherry-mainnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws external
 	```
 
 #### 2. Testnet
@@ -90,7 +90,7 @@ Methods:
 	```bash
 	./target/release/cherry --chain cherry-testnet \
 	--name "<insert a name of your choice for you validator>" \
-	--bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWPPV5cf5XYECX26GkxrfH48Cn5n4zPybwuCTEDwRTfbuT \
+	--bootnodes /ip4/13.39.82.222/tcp/30333/p2p/12D3KooWChBa8Kk37fZuJJSqkkbYSzstXYXENnanCqDB5eMfA34A \
 	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
 	--validator \
 	--rpc-methods=unsafe \
@@ -102,7 +102,7 @@ Methods:
 2. Docker
 
 	```bash
-	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.38.218.95/tcp/30333/p2p/12D3KooWPPV5cf5XYECX26GkxrfH48Cn5n4zPybwuCTEDwRTfbuT --validator --name testnet-node01 --base-path /tmp/cherry-testnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws external
+	docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.39.82.222/tcp/30333/p2p/12D3KooWChBa8Kk37fZuJJSqkkbYSzstXYXENnanCqDB5eMfA34A --validator --name testnet-node01 --base-path /tmp/cherry-testnet-node01 --rpc-methods=unsafe --rpc-cors all --rpc-external --ws external
 	```
 
 ## Generating the Session Keys
