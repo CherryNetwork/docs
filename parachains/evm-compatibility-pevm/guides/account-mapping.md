@@ -1,4 +1,4 @@
-# Accounts Mapping
+# Account Mapping
 
 ## Ethereum - Substrate account Mapping
 
@@ -10,13 +10,13 @@ Head over to the [Address Converter](https://converter.cherrylabs.org/) to easil
 
 Just select the input address format from the dropdown and enter the selected input format address in the input field and click on go. For example:
 
-- Select the input address format to H160(ethereum)
-- Enter your Ethereum address and click on go
-- You will get your equivalent SS58(substrate) address
+* Select the input address format to H160(ethereum)
+* Enter your Ethereum address and click on go
+* You will get your equivalent SS58(substrate) address
 
 An example of using the Address Converter can be seen in the image below:
 
-![address converter example](../.gitbook/assets/addressConvExample.png)
+![address converter example](../../../.gitbook/assets/addressConvExample.png)
 
 ## Ethereum (H160) to Substrate Address Mapping
 

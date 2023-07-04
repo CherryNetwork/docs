@@ -12,7 +12,7 @@ The Cherry Project is a Decentralized Autonomous Organization developing a layer
 * with a WASM (WebAssembly) Runtime through Parity Substrate
 * And the ability to run Rust (Ink!) Contracts
 * Trustless offchain storage oracle
-* compatible with the Inter Planetary File System&#x20;
+* compatible with the Inter Planetary File System
 
 It is designed to apply decision-making process to the runtime of the blockchain, but also to the decision-making processes themselves, in an effort to rapidly generate more effective governance solutions for blockchain platforms.
 
@@ -22,7 +22,7 @@ Cherry users value the platform for its commitment and potential to fulfill this
 
 **Built on Substrate**
 
-Cherry is built on Parity Substrate, a framework for creating new blockchains derived from the Polkadot project. Substrate implements nearly all the code necessary to launch a working blockchain, including libp2p networking, a WebAssembly runtime, PBFT consensus, and clients for running nodes and proof-of-stake validators.&#x20;
+Cherry is built on Parity Substrate, a framework for creating new blockchains derived from the Polkadot project. Substrate implements nearly all the code necessary to launch a working blockchain, including libp2p networking, a WebAssembly runtime, PBFT consensus, and clients for running nodes and proof-of-stake validators.
 
 **Getting Involved**
 
@@ -34,6 +34,6 @@ Cherry is most plainly an actively-governed smart contract blockchain. Emphasis 
 
 … develop the protocol using skills or interest that you may have. And for those efforts, be compensated with additional CHER token — representing future staking and voting rights.
 
-****
+
 
 **This site,** Cherry Documentation, aims to become a community-developed resource for the use, validation, development on, and management of the Cherry smart contract platform.

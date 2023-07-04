@@ -5,6 +5,8 @@
 * [Introduction](README.md)
 * [The Cherry Primer](the-basics/the-cherry-primer.md)
 * [Cherry Protocol](the-basics/cherry-protocol.md)
+* [Cherry Token](the-basics/cherry-token/README.md)
+  * [Wrapped Cherry Token](the-basics/cherry-token/bridged-cherry-token.md)
 
 ## Quickstart
 
@@ -13,6 +15,7 @@
 
 ## Cherry Node
 
+* [Parachain & Parathread](cherry-node/parachain-and-parathread.md)
 * [Consensus](cherry-node/consensus/README.md)
   * [Become a Validator](cherry-node/consensus/become-a-validator.md)
   * [Become a Nominator](cherry-node/consensus/become-a-nominator.md)
@@ -23,17 +26,20 @@
 * [Storage](cherry-node/storage/README.md)
   * [What is IPFS](cherry-node/storage/what-is-ipfs.md)
   * [Application Programming Interface](cherry-node/storage/application-programming-interface.md)
-* [Interoperability Channels](cherry-node/interoperability-channels/README.md)
-  * [Bridged Cherry Token](cherry-node/interoperability-channels/bridged-cherry-token.md)
 * [Identities](cherry-node/identities.md)
+
+## Parachains
+
+* [EVM Compatibility (pEVM)](parachains/evm-compatibility-pevm/README.md)
+  * [Guides](parachains/evm-compatibility-pevm/guides/README.md)
+    * [Connect Remix](parachains/evm-compatibility-pevm/guides/connect-remix.md)
+    * [Account Mapping](parachains/evm-compatibility-pevm/guides/account-mapping.md)
+    * [Token Transfer](parachains/evm-compatibility-pevm/guides/token-transfer.md)
+    * [Connect Metamask](parachains/evm-compatibility-pevm/guides/connect-metamask.md)
 
 ## Build
 
 * [Style Guide](build/style-guide.md)
-
-## The Cherry Token <a href="#cherry-token" id="cherry-token"></a>
-
-* [Frequently Asked Questions](cherry-token/frequently-asked-questions.md)
 
 ## Community
 
@@ -44,14 +50,6 @@
 
 * [Finance](cherry-ecosystem/finance.md)
 * [Capital Partners](cherry-ecosystem/capital-partners.md)
-
-## Cherry EVM Parachain
-
-* [Account Mapping](cherry-evm-parachain/account-mapping.md)
-* [Connect Metamask](cherry-evm-parachain/connect-metamask.md)
-* [Connect Remix](cherry-evm-parachain/connect-remix.md)
-* [Token Transfer](cherry-evm-parachain/token-transfer.md)
-
 
 ## Substrate
 
