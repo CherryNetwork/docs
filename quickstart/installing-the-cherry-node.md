@@ -66,14 +66,14 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
             ```shell
             cargo b --release && ./target/release/cherry \ 
             --chain node/service/chain-specs/mainnet-relay-regenesis.json \
-            --bootnodes /ip4/13.39.104.56/tcp/30333/p2p/12D3KooWJmNgQE6hftytjeXnwNRNrkxFLoChSa5FSuU7F4DnBUEZ \ 
+            --bootnodes /ip4/13.39.104.56/tcp/30333/p2p/12D3KooWLeBxr6vEwv2vDmQMGgd1P72WvwuhcY1YGBD421B4PfuM \ 
             --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
             ```
 
         3. Docker
 
             ```bash
-            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry --bootnodes /ip4/13.39.104.56/tcp/30333/p2p/12D3KooWJmNgQE6hftytjeXnwNRNrkxFLoChSa5FSuU7F4DnBUEZ --name mainnet-node01 --base-path /tmp/cherry-mainnet-node01
+            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry --bootnodes /ip4/13.39.104.56/tcp/30333/p2p/12D3KooWLeBxr6vEwv2vDmQMGgd1P72WvwuhcY1YGBD421B4PfuM --name mainnet-node01 --base-path /tmp/cherry-mainnet-node01
             ```
 
     * Testnet
@@ -90,12 +90,12 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
             ```shell
             cargo b --release && ./target/release/cherry \ 
             --chain cherry-testnet \
-            --bootnodes /ip4/13.39.82.222/tcp/30333/p2p/12D3KooWChBa8Kk37fZuJJSqkkbYSzstXYXENnanCqDB5eMfA34A \
+            --bootnodes /ip4/52.47.101.101/tcp/30333/p2p/12D3KooWNdDRo2BkTLfBr88SZpWn43tSbTFkUo5fMMa8byKVg8uz \
             --telemetry-url "wss://telemetry.polkadot.io/submit/ 0" 
             ```
 
         3. Docker
 
             ```bash
-            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/13.39.82.222/tcp/30333/p2p/12D3KooWChBa8Kk37fZuJJSqkkbYSzstXYXENnanCqDB5eMfA34A --name testnet-node01 --base-path /tmp/cherry-testnet-node01
+            docker run --rm -it -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd):/tmp/cherry-node cherrylabsorg/cherry-polkadot-node:dev --chain cherry-testnet --bootnodes /ip4/52.47.101.101/tcp/30333/p2p/12D3KooWNdDRo2BkTLfBr88SZpWn43tSbTFkUo5fMMa8byKVg8uz --name testnet-node01 --base-path /tmp/cherry-testnet-node01
             ```
