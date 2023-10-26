@@ -5,35 +5,33 @@
 * [Introduction](README.md)
 * [The Cherry Primer](the-basics/the-cherry-primer.md)
 * [Cherry Protocol](the-basics/cherry-protocol.md)
+* [Cherry Token](the-basics/cherry-token/README.md)
+  * [Wrapped Cherry Token](cherry-node/interoperability-channels/bridged-cherry-token.md)
 
 ## Quickstart
 
 * [Installing the Cherry Node](quickstart/installing-the-cherry-node.md)
 * [Create an Account](quickstart/create-an-account.md)
 
-## Cherry Node
+## Cherry Stack
 
-* [Consensus](cherry-node/consensus/README.md)
-  * [Become a Validator](cherry-node/consensus/become-a-validator.md)
-  * [Become a Nominator](cherry-node/consensus/become-a-nominator.md)
-  * [Unbonding and Rebonding](cherry-node/consensus/unbonding-and-rebonding.md)
-  * [Validating FAQ](cherry-node/consensus/validating-faq.md)
-* [Governance](cherry-node/governance/README.md)
-  * [Treasury](cherry-node/governance/treasury.md)
-* [Storage](cherry-node/storage/README.md)
-  * [What is IPFS](cherry-node/storage/what-is-ipfs.md)
-  * [Application Programming Interface](cherry-node/storage/application-programming-interface.md)
-* [Interoperability Channels](cherry-node/interoperability-channels/README.md)
-  * [Bridged Cherry Token](cherry-node/interoperability-channels/bridged-cherry-token.md)
-* [Identities](cherry-node/identities.md)
+* [Parachain & Parathread](cherry-stack/parachain-and-parathread.md)
+* [Consensus](cherry-stack/consensus/README.md)
+  * [Become a Validator](cherry-stack/consensus/become-a-validator.md)
+  * [Become a Nominator](cherry-stack/consensus/become-a-nominator.md)
+  * [Unbonding and Rebonding](cherry-stack/consensus/unbonding-and-rebonding.md)
+  * [Validating FAQ](cherry-stack/consensus/validating-faq.md)
+* [Governance](cherry-stack/governance/README.md)
+  * [Treasury](cherry-stack/governance/treasury.md)
+* [Storage](cherry-stack/storage/README.md)
+  * [What is IPFS](cherry-stack/storage/what-is-ipfs.md)
+  * [Application Programming Interface](cherry-stack/storage/application-programming-interface.md)
+* [EVM Compatibility (pEVM)](cherry-stack/evm-compatibility-pevm.md)
+* [Identities](cherry-stack/identities.md)
 
 ## Build
 
 * [Style Guide](build/style-guide.md)
-
-## The Cherry Token <a href="#cherry-token" id="cherry-token"></a>
-
-* [Frequently Asked Questions](cherry-token/frequently-asked-questions.md)
 
 ## Community
 
@@ -44,14 +42,6 @@
 
 * [Finance](cherry-ecosystem/finance.md)
 * [Capital Partners](cherry-ecosystem/capital-partners.md)
-
-## Cherry EVM Parachain
-
-* [Account Mapping](cherry-evm-parachain/account-mapping.md)
-* [Connect Metamask](cherry-evm-parachain/connect-metamask.md)
-* [Connect Remix](cherry-evm-parachain/connect-remix.md)
-* [Token Transfer](cherry-evm-parachain/token-transfer.md)
-
 
 ## Substrate
 
